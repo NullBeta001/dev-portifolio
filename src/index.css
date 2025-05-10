@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes pulse-slow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-slow {
+  animation-name: pulse-slow;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+
+
 @layer base {
   :root {
     --background: 225 25% 97%;

@@ -1,14 +1,16 @@
-
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
+import AnimatedBackground from "./AnimatedBackground";
+
 const Hero: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="home" className="min-h-screen flex items-center pt-20 section">
-      <div className="container mx-auto">
+    <section id="home" className="min-h-screen flex items-center pt-20 section relative overflow-hidden">
+      <AnimatedBackground />
+      <div className="container mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="stagger-animation">
             <p className="text-accent font-medium mb-2">{t("Olá, meu nome é")}</p>
