@@ -89,13 +89,13 @@ const About: React.FC<AboutProps> = ({
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 relative rounded-full overflow-hidden bg-background/50">
+                <div className="w-16 h-16 relative overflow-hidden bg-background/50">
                   <img
                     src={exp.logo}
                     alt={exp.company}
-                    className="object-contain p-2"
-                    width={48}
-                    height={48}
+                    className="object-contain rounded-lg p-2"
+                    width={58}
+                    height={58}
                   />
                 </div>
                 <div className="flex-1">

@@ -31,14 +31,13 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? "bg-background shadow-md py-3" : "py-5"
-    }`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? "bg-background shadow-md py-3" : "py-5"
+      }`}>
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="#" className="text-xl md:text-2xl font-heading font-bold">
-          <span className="gradient-text">Dev</span>Portfolio
+          <span className="gradient-text">Dev</span>Fábio
         </a>
-        
+
         <div className="hidden md:flex items-center space-x-8">
           <nav className="flex items-center space-x-6">
             <a href="#home" className="nav-link">{t("Home")}</a>
@@ -51,7 +50,7 @@ const Navbar: React.FC = () => {
             <LanguageSwitcher />
           </div>
         </div>
-        
+
         <div className="md:hidden flex items-center gap-4">
           <ThemeSwitcher />
           <LanguageSwitcher />
@@ -60,11 +59,10 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile menu */}
-      <div className={`md:hidden absolute w-full bg-background shadow-md transition-all duration-300 ease-in-out ${
-        isOpen ? "opacity-100 max-h-[500px]" : "opacity-0 max-h-0 overflow-hidden"
-      }`}>
+      <div className={`md:hidden absolute w-full bg-background shadow-md transition-all duration-300 ease-in-out ${isOpen ? "opacity-100 max-h-[500px]" : "opacity-0 max-h-0 overflow-hidden"
+        }`}>
         <nav className="flex flex-col py-4 px-6 space-y-4">
           <a href="#home" className="nav-link" onClick={toggleMenu}>{t("Home")}</a>
           <a href="#about" className="nav-link" onClick={toggleMenu}>{t("Sobre")}</a>
