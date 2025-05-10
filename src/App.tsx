@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +7,7 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import AnimatedBackground from "./components/AnimatedBackground";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +16,7 @@ const App = () => (
     <ThemeProvider>
       <LanguageProvider>
         <TooltipProvider>
+          <AnimatedBackground />
           <Toaster />
           <Sonner />
           <BrowserRouter>
