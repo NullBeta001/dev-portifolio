@@ -25,7 +25,6 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
         setLines(prev => [...prev, bootSequence[currentLine]]);
         setCurrentLine(prev => prev + 1);
       } else {
-        // Quando todas as linhas forem mostradas, espera mais 1 segundo e completa o loading
         setTimeout(() => {
           onLoadingComplete();
         }, 3500);
