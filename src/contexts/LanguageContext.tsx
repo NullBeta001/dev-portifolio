@@ -1,4 +1,3 @@
-
 import React, { createContext, useState, useContext, ReactNode } from "react";
 
 type Language = "pt" | "en";
@@ -26,6 +25,11 @@ const translations = {
   "Contato": {
     pt: "Contato",
     en: "Contact"
+  },
+
+  "Experiências": {
+    pt: "Experiências",
+    en: "Experience"
   },
 
   // Hero
@@ -61,7 +65,7 @@ const translations = {
   },
   "second_paragraph": {
     pt: "Na BIX Tech, além de implementar interfaces modernas e responsivas, contribuo ativamente em decisões de arquitetura, integração com APIs RESTful e práticas de engenharia como SOLID, Clean Code e DDD. Também venho expandindo minhas habilidades full-stack com Node.js e Docker, sempre buscando evoluir como engenheiro de software completo.",
-    en: "At BIX Tech, I not only build modern and responsive interfaces but also contribute to architectural decisions, RESTful API integrations, and software engineering best practices like SOLID, Clean Code, and DDD. I’m also expanding my full-stack skills with Node.js and Docker, constantly evolving as a well-rounded software engineer."
+    en: "At BIX Tech, I not only build modern and responsive interfaces but also contribute to architectural decisions, RESTful API integrations, and software engineering best practices like SOLID, Clean Code, and DDD. I'm also expanding my full-stack skills with Node.js and Docker, constantly evolving as a well-rounded software engineer."
   },
   "third_paragraph": {
     pt: "Tenho certificações em AWS e Google Cloud, experiência com ambientes em nuvem (AWS, GCP, Azure) e integração com sistemas de autenticação como Microsoft Entra ID. Trabalhar com agilidade, organização e entrega de valor real é o que me move em cada projeto.",
