@@ -23,7 +23,7 @@ const Experiences: React.FC<ExperiencesProps> = ({
   return (
     <section id="experiences" className="section bg-secondary/30">
       <div className="container mx-auto">
-        <h2 className="section-title">{t("Experiência Profissional")}</h2>
+        <h2 className="section-title">{t("Experiências")}</h2>
 
         <div className="mt-12 space-y-8">
           {experiences.map((exp, index) => (
