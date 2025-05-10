@@ -6,6 +6,7 @@ import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Experiences from "@/components/Experiences";
 
 const Index: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Index: React.FC = () => {
       <Navbar />
       <Hero />
       <About />
+      <Experiences />
       <Projects />
       <Contact />
       <Footer />

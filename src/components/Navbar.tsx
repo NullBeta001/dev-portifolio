@@ -42,6 +42,7 @@ const Navbar: React.FC = () => {
           <nav className="flex items-center space-x-6">
             <a href="#home" className="nav-link">{t("Home")}</a>
             <a href="#about" className="nav-link">{t("Sobre")}</a>
+            <a href="#experiences" className="nav-link">{t("Experiências")}</a>
             <a href="#projects" className="nav-link">{t("Projetos")}</a>
             <a href="#contact" className="nav-link">{t("Contato")}</a>
           </nav>
