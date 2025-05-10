@@ -112,6 +112,91 @@ const translations = {
     en: "Senai São Paulo, 2022"
   },
 
+  // Experience
+  "bix_tech_empresa": {
+    pt: "BIX Tech",
+    en: "BIX Tech"
+  },
+  "bix_tech_cargo": {
+    pt: "Engenheiro de Software Front-End",
+    en: "Front-End Software Engineer"
+  },
+  "bix_tech_periodo": {
+    pt: "Outubro de 2024 – Presente",
+    en: "October 2024 – Present"
+  },
+  "bix_tech_descricao": {
+    pt: "Desenvolvimento de aplicações escaláveis com foco em performance, acessibilidade e usabilidade utilizando React, Next.js e TypeScript. Participação em decisões de arquitetura, integração com APIs RESTful, aplicação de padrões como SOLID e Clean Code, e liderança técnica em projetos de consultoria.",
+    en: "Development of scalable applications with a focus on performance, accessibility, and usability using React, Next.js, and TypeScript. Participated in architectural decisions, RESTful API integrations, applied principles like SOLID and Clean Code, and provided technical leadership in consulting projects."
+  },
+  "bix_tech_tecnologias": {
+    pt: "React, Next.js, TypeScript, Node.js, Docker, Docker Compose, Git, APIs RESTful, Vite, TailwindCSS",
+    en: "React, Next.js, TypeScript, Node.js, Docker, Docker Compose, Git, RESTful APIs, Vite, TailwindCSS"
+  },
+
+  "germinareagro_empresa": {
+    pt: "Germinare",
+    en: "Germinare"
+  },
+  "germinareagro_cargo": {
+    pt: "Desenvolvedor Front-End",
+    en: "Front-End Developer"
+  },
+  "germinareagro_periodo": {
+    pt: "Abril de 2023 – Novembro de 2024",
+    en: "April 2023 – November 2024"
+  },
+  "germinareagro_descricao": {
+    pt: "Desenvolvimento de aplicações web internas e externas voltadas para o mercado Agro. Atuação desde o levantamento de requisitos até a implementação, utilizando React, TypeScript, Python, PostgreSQL, MongoDB, Figma e APIs REST.",
+    en: "Development of internal and external web applications focused on the Agro market. Worked from requirements gathering to implementation, using React, TypeScript, Python, PostgreSQL, MongoDB, Figma, and REST APIs."
+  },
+  "germinareagro_tecnologias": {
+    pt: "React, TypeScript, Python, PostgreSQL, MongoDB, Figma, APIs REST",
+    en: "React, TypeScript, Python, PostgreSQL, MongoDB, Figma, REST APIs"
+  },
+
+  "dgsistemas_empresa": {
+    pt: "DG Sistemas Inteligentes",
+    en: "DG Sistemas Inteligentes"
+  },
+  "dgsistemas_cargo": {
+    pt: "Desenvolvedor de Software",
+    en: "Software Developer"
+  },
+  "dgsistemas_periodo": {
+    pt: "Novembro de 2022 – Abril de 2023",
+    en: "November 2022 – April 2023"
+  },
+  "dgsistemas_descricao": {
+    pt: "Desenvolvimento com Angular, TypeScript, Node.js, Firebase e AWS Lambda. Envolvimento em projetos de alta criticidade, com foco em segurança de dados e criação de novas funcionalidades.",
+    en: "Development using Angular, TypeScript, Node.js, Firebase, and AWS Lambda. Involved in high-criticality projects, focusing on data security and the creation of new features."
+  },
+  "dgsistemas_tecnologias": {
+    pt: "Angular, TypeScript, Node.js, Firebase, AWS Lambda",
+    en: "Angular, TypeScript, Node.js, Firebase, AWS Lambda"
+  },
+
+  "braintrust_empresa": {
+    pt: "Braintrust",
+    en: "Braintrust"
+  },
+  "braintrust_cargo": {
+    pt: "Desenvolvedor Full Stack",
+    en: "Full Stack Developer"
+  },
+  "braintrust_periodo": {
+    pt: "Julho de 2022 – Abril de 2023",
+    en: "July 2022 – April 2023"
+  },
+  "braintrust_descricao": {
+    pt: "Desenvolvimento full stack de aplicações web, atuando desde o design até a implementação do front-end e back-end.",
+    en: "Full stack web application development, working from design to front-end and back-end implementation."
+  },
+  "braintrust_tecnologias": {
+    pt: "Full Stack: React, Node.js, JavaScript, HTML, CSS",
+    en: "Full Stack: React, Node.js, JavaScript, HTML, CSS"
+  },
+
   // Projects
   "Meus Projetos": {
     pt: "Meus Projetos",
