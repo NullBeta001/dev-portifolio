@@ -24,7 +24,11 @@ const Hero: React.FC = () => {
               {t("Eu crio experiências digitais excepcionais com foco em design moderno e código limpo. Especializado em construir aplicações web responsivas com React.")}
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-accent hover:bg-accent/90">
+              <Button
+                size="lg"
+                className="bg-accent hover:bg-accent/90"
+                onClick={() => window.open('https://github.com/NullBeta001?tab=repositories', '_blank')}
+              >
                 {t("Ver Projetos")} <ArrowRight size={16} className="ml-2" />
               </Button>
               <Button size="lg" variant="outline">

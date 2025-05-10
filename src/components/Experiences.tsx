@@ -32,7 +32,7 @@ const Experiences: React.FC<ExperiencesProps> = ({
               className="bg-card/30 rounded-lg p-6 animate-fade-in hover:bg-card/40 transition-colors border border-border/50 h-full"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex items-start gap-6">
+              <div className="flex items-start gap-2">
                 <div className="w-16 h-16 relative overflow-hidden bg-background/50 rounded-lg flex-shrink-0">
                   <img
                     src={exp.logo}
