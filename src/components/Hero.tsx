@@ -3,7 +3,6 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-
 const Hero: React.FC = () => {
   const { t } = useLanguage();
 
@@ -37,7 +36,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-60 h-60 lg:w-76 lg:h-76 rounded-full bg-background flex items-center justify-center overflow-hidden">
                 <div className="h-full w-full bg-gradient-to-br from-gray-100 to-gray-300 flex items-center justify-center">
-                  {/* <span className="text-6xl">👨‍💻</span> */}
+                  <img src="/profile.jpg" alt="Fábio Oliveira" width={300} height={300} />
                 </div>
               </div>
             </div>

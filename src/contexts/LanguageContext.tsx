@@ -27,7 +27,7 @@ const translations = {
     pt: "Contato",
     en: "Contact"
   },
-  
+
   // Hero
   "Olá, meu nome é": {
     pt: "Olá, meu nome é",
@@ -49,23 +49,23 @@ const translations = {
     pt: "Baixar CV",
     en: "Download CV"
   },
-  
+
   // About
   "Sobre Mim": {
     pt: "Sobre Mim",
     en: "About Me"
   },
-  "Sou um desenvolvedor front-end apaixonado por criar interfaces bonitas e funcionais. Com mais de 3 anos de experiência em desenvolvimento web, tenho trabalhado com diversas tecnologias modernas para criar soluções digitais de alta qualidade.": {
-    pt: "Sou um desenvolvedor front-end apaixonado por criar interfaces bonitas e funcionais. Com mais de 3 anos de experiência em desenvolvimento web, tenho trabalhado com diversas tecnologias modernas para criar soluções digitais de alta qualidade.",
-    en: "I am a front-end developer passionate about creating beautiful and functional interfaces. With over 3 years of experience in web development, I have been working with various modern technologies to create high-quality digital solutions."
+  "first_paragraph": {
+    pt: "Olá! Sou Fábio Oliveira, desenvolvedor front-end com foco em React, Next.js e Angular, apaixonado por criar aplicações web escaláveis, acessíveis e com alta performance. Desde 2021, atuo com consultoria em tecnologia, liderando projetos estratégicos que conectam design, usabilidade e código limpo.",
+    en: "Hi! I'm Fábio Oliveira, a front-end developer focused on React, Next.js, and Angular, passionate about building scalable, accessible, and high-performance web applications. Since 2021, I've worked on technology consulting projects, leading strategic initiatives that connect design, usability, and clean code."
   },
-  "Minha jornada começou com HTML, CSS e JavaScript, mas logo me aprofundei em frameworks modernos como React e Next.js. Meu objetivo é sempre criar experiências de usuário excepcionais que combinam design atraente com código limpo e eficiente.": {
-    pt: "Minha jornada começou com HTML, CSS e JavaScript, mas logo me aprofundei em frameworks modernos como React e Next.js. Meu objetivo é sempre criar experiências de usuário excepcionais que combinam design atraente com código limpo e eficiente.",
-    en: "My journey started with HTML, CSS and JavaScript, but I soon delved into modern frameworks like React and Next.js. My goal is always to create exceptional user experiences that combine attractive design with clean and efficient code."
+  "second_paragraph": {
+    pt: "Na BIX Tech, além de implementar interfaces modernas e responsivas, contribuo ativamente em decisões de arquitetura, integração com APIs RESTful e práticas de engenharia como SOLID, Clean Code e DDD. Também venho expandindo minhas habilidades full-stack com Node.js e Docker, sempre buscando evoluir como engenheiro de software completo.",
+    en: "At BIX Tech, I not only build modern and responsive interfaces but also contribute to architectural decisions, RESTful API integrations, and software engineering best practices like SOLID, Clean Code, and DDD. I’m also expanding my full-stack skills with Node.js and Docker, constantly evolving as a well-rounded software engineer."
   },
-  "Quando não estou codando, gosto de ler sobre novas tecnologias, jogar videogames e explorar novos lugares.": {
-    pt: "Quando não estou codando, gosto de ler sobre novas tecnologias, jogar videogames e explorar novos lugares.",
-    en: "When I'm not coding, I enjoy reading about new technologies, playing video games, and exploring new places."
+  "third_paragraph": {
+    pt: "Tenho certificações em AWS e Google Cloud, experiência com ambientes em nuvem (AWS, GCP, Azure) e integração com sistemas de autenticação como Microsoft Entra ID. Trabalhar com agilidade, organização e entrega de valor real é o que me move em cada projeto.",
+    en: "I'm AWS-certified and experienced with cloud environments such as AWS, GCP, and Azure, including authentication services like Microsoft Entra ID. I thrive in agile environments, bringing organization, technical leadership, and real value to every project."
   },
   "Minhas Habilidades": {
     pt: "Minhas Habilidades",
@@ -75,23 +75,43 @@ const translations = {
     pt: "Educação",
     en: "Education"
   },
-  "Bacharelado em Ciência da Computação": {
-    pt: "Bacharelado em Ciência da Computação",
-    en: "Bachelor's Degree in Computer Science"
+
+  "first_education": {
+    pt: "Curso Técnico Integrado em User Experience",
+    en: "Technical Program in User Experience"
   },
-  "Universidade Federal, 2017-2021": {
-    pt: "Universidade Federal, 2017-2021",
-    en: "Federal University, 2017-2021"
+  "first_education_date": {
+    pt: "FIAP, 2023",
+    en: "FIAP, 2023"
   },
-  "Especialização em Desenvolvimento Web": {
-    pt: "Especialização em Desenvolvimento Web",
-    en: "Specialization in Web Development"
+
+  "second_education": {
+    pt: "Curso Superior de Tecnologia em Desenvolvimento Back End",
+    en: "Associate Degree in Back-End Development"
   },
-  "Instituto de Tecnologia, 2021-2022": {
-    pt: "Instituto de Tecnologia, 2021-2022",
-    en: "Technology Institute, 2021-2022"
+  "second_education_date": {
+    pt: "Senai São Paulo, 2022–2023",
+    en: "Senai São Paulo, 2022–2023"
   },
-  
+
+  "third_education": {
+    pt: "Curso Superior de Tecnologia em Desenvolvimento Front End",
+    en: "Associate Degree in Front-End Development"
+  },
+  "third_education_date": {
+    pt: "Senai São Paulo, 2021–2022",
+    en: "Senai São Paulo, 2021–2022"
+  },
+
+  "fourth_education": {
+    pt: "Certificação em Implantação de Sistemas em AWS Cloud",
+    en: "Certification in AWS Cloud Systems Deployment"
+  },
+  "fourth_education_date": {
+    pt: "Senai São Paulo, 2022",
+    en: "Senai São Paulo, 2022"
+  },
+
   // Projects
   "Meus Projetos": {
     pt: "Meus Projetos",
@@ -133,7 +153,7 @@ const translations = {
     pt: "Ver mais projetos",
     en: "View more projects"
   },
-  
+
   // Contact
   "Vamos conversar!": {
     pt: "Vamos conversar!",
@@ -187,7 +207,7 @@ const translations = {
     pt: "Obrigado por entrar em contato. Responderei em breve.",
     en: "Thank you for reaching out. I'll respond soon."
   },
-  
+
   // Footer
   "Todos os direitos reservados.": {
     pt: "Todos os direitos reservados.",
@@ -197,7 +217,7 @@ const translations = {
     pt: "Desenvolvido com ❤️ e React",
     en: "Developed with ❤️ and React"
   },
-  
+
   // Theme
   "Claro": {
     pt: "Claro",
@@ -215,7 +235,7 @@ const translations = {
 
 export const LanguageContext = createContext<LanguageContextType>({
   language: "pt",
-  setLanguage: () => {},
+  setLanguage: () => { },
   t: () => "",
 });
 
