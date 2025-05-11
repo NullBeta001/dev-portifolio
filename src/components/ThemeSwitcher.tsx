@@ -1,9 +1,7 @@
-
 import React from "react";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,10 +14,6 @@ const ThemeSwitcher: React.FC = () => {
   const { theme, setTheme } = useTheme();
   const { t } = useLanguage();
 
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
-
   return (
     <div className="flex items-center space-x-2">
       <DropdownMenu>
@@ -31,10 +25,16 @@ const ThemeSwitcher: React.FC = () => {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="end">
-          <DropdownMenuItem onClick={() => setTheme("light")}>
+          <DropdownMenuItem
+            onClick={() => setTheme("light")}
+            className={theme === "light" ? "bg-accent/20" : ""}
+          >
             {t("Claro")}
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme("dark")}>
+          <DropdownMenuItem
+            onClick={() => setTheme("dark")}
+            className={theme === "dark" ? "bg-accent/20" : ""}
+          >
             {t("Escuro")}
           </DropdownMenuItem>
         </DropdownMenuContent>
