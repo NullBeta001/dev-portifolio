@@ -1,21 +1,46 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Mail, Phone, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
 import { useLanguage } from "@/contexts/LanguageContext";
+import emailjs from "emailjs-com";
 
 const Contact: React.FC = () => {
   const { toast } = useToast();
   const { t } = useLanguage();
+  const formRef = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: t("Mensagem enviada!"),
-      description: t("Obrigado por entrar em contato. Responderei em breve."),
-    });
+    setLoading(true);
+    if (!formRef.current) return;
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID!,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID!,
+        formRef.current,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY!
+      )
+      .then(
+        () => {
+          toast({
+            title: t("Mensagem enviada!"),
+            description: t("Obrigado por entrar em contato. Responderei em breve."),
+          });
+          formRef.current?.reset();
+        },
+        (error) => {
+          toast({
+            title: "Erro ao enviar mensagem",
+            description: error.text || "Tente novamente mais tarde.",
+            variant: "destructive",
+          });
+        }
+      )
+      .finally(() => setLoading(false));
   };
 
   return (
@@ -67,32 +92,36 @@ const Contact: React.FC = () => {
           </div>
 
           <div className="animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <form onSubmit={handleSubmit} className="space-y-6">
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">{t("Nome")}</label>
-                  <Input id="name" placeholder={t("Seu nome")} required />
+                  <Input id="name" name="name" placeholder={t("Seu nome")}
+                    required />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">{t("Email")}</label>
-                  <Input id="email" type="email" placeholder={t("Seu email")} required />
+                  <Input id="email" name="email" type="email" placeholder={t("Seu email")}
+                    required />
                 </div>
               </div>
               <div className="space-y-2">
                 <label htmlFor="subject" className="text-sm font-medium">{t("Assunto")}</label>
-                <Input id="subject" placeholder={t("Assunto da mensagem")} required />
+                <Input id="subject" name="subject" placeholder={t("Assunto da mensagem")}
+                  required />
               </div>
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">{t("Mensagem")}</label>
                 <Textarea
                   id="message"
+                  name="message"
                   placeholder={t("Escreva sua mensagem aqui...")}
                   required
                   rows={5}
                 />
               </div>
-              <Button type="submit" className="w-full bg-accent hover:bg-accent/90">
-                {t("Enviar Mensagem")}
+              <Button type="submit" className="w-full bg-accent hover:bg-accent/90" disabled={loading}>
+                {loading ? t("Enviando...") : t("Enviar Mensagem")}
               </Button>
             </form>
           </div>
