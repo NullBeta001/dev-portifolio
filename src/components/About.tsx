@@ -39,7 +39,7 @@ const About: React.FC<AboutProps> = () => {
               {skills.map((skill, index) => (
                 <Badge
                   key={index}
-                  className="bg-accent/10 hover:bg-accent/20 text-accent-foreground px-4 py-2 text-sm animate-fade-in"
+                  className="bg-accent/70 hover:bg-accent/50 text-accent-foreground dark:bg-accent/30 dark:hover:bg-accent/50 px-4 py-2 text-sm animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {skill}

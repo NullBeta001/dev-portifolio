@@ -5,7 +5,17 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import AnimatedBackground from "./AnimatedBackground";
 
 const Hero: React.FC = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  const handleDownloadCV = () => {
+    const cvFileName = language === 'en' ? 'Curriculo_2025_en.pdf' : 'Curriculo_2025_pt_br.pdf';
+    const link = document.createElement('a');
+    link.href = `/${cvFileName}`;
+    link.download = cvFileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <section id="home" className="min-h-screen flex items-center pt-20 section relative overflow-hidden">
@@ -31,7 +41,11 @@ const Hero: React.FC = () => {
               >
                 {t("Ver Projetos")} <ArrowRight size={16} className="ml-2" />
               </Button>
-              <Button size="lg" variant="outline">
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={handleDownloadCV}
+              >
                 {t("Baixar CV")}
               </Button>
             </div>

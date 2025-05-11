@@ -15,7 +15,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const ThemeSwitcher: React.FC = () => {
   const { theme, setTheme } = useTheme();
   const { t } = useLanguage();
-  
+
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
@@ -36,9 +36,6 @@ const ThemeSwitcher: React.FC = () => {
           </DropdownMenuItem>
           <DropdownMenuItem onClick={() => setTheme("dark")}>
             {t("Escuro")}
-          </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => setTheme("system")}>
-            {t("Sistema")}
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
