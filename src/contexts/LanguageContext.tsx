@@ -319,6 +319,10 @@ const translations = {
   "Sistema": {
     pt: "Sistema",
     en: "System"
+  },
+  "Em construção": {
+    pt: "Em construção",
+    en: "Under construction"
   }
 };
 
