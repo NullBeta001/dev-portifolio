@@ -222,13 +222,13 @@ const translations = {
     pt: "Um app SPA que simula um e-commerce de acessórios e periféricos para gamers.",
     en: "A SPA app that simulates an e-commerce of accessories and peripherals for gamers."
   },
-  "App de Notícias": {
-    pt: "App de Notícias",
-    en: "News App"
+  "Invoko": {
+    pt: "Invoko",
+    en: "Invoko"
   },
-  "Aplicativo de notícias com categorias, pesquisa e sistema de favoritos utilizando APIs de notícias.": {
-    pt: "Aplicativo de notícias com categorias, pesquisa e sistema de favoritos utilizando APIs de notícias.",
-    en: "News application with categories, search, and favorites system using news APIs."
+  "Um app para desenvolvedores gerarem invoices para seus clientes sem burocracia": {
+    pt: "Um app para desenvolvedores gerarem invoices para seus clientes sem burocracia",
+    en: "An app for developers to generate invoices for their clients without bureaucracy"
   },
   "Código": {
     pt: "Código",

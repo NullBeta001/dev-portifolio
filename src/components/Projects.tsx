@@ -18,6 +18,14 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
+      titleKey: "Invoko",
+      descriptionKey: "Um app para desenvolvedores gerarem invoices para seus clientes sem burocracia",
+      image: "/invoko.png",
+      tags: ["React", "Vite", "Tailwind CSS", "TypeScript", "GSAP", "shadcn/ui"],
+      liveUrl: "https://www.invoko.com.br/",
+      repoUrl: "https://github.com/NullBeta001/invoko_frontend",
+    },
+    {
       titleKey: "Dashboard Financeiro",
       descriptionKey: "Um dashboard financeiro completo com visualização de dados, gráficos e tabelas para gerenciamento de finanças.",
       image: "/financial_dash.png",
@@ -32,14 +40,6 @@ const Projects: React.FC = () => {
       tags: ["Angular", "TypeScript", "Karma", "Babel"],
       liveUrl: "https://game-mania-lilac.vercel.app/",
       repoUrl: "https://github.com/NullBeta001/game-mania-angular",
-    },
-    {
-      titleKey: "App de Notícias",
-      descriptionKey: "Aplicativo de notícias com categorias, pesquisa e sistema de favoritos utilizando APIs de notícias.",
-      image: "/placeholder.svg",
-      tags: ["React Native", "Redux", "Firebase", "REST API"],
-      liveUrl: "#",
-      repoUrl: "#",
     },
   ];
 
@@ -59,7 +59,14 @@ const Projects: React.FC = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle>{t(project.titleKey)}</CardTitle>
+                <div className="flex items-start justify-between">
+                  <CardTitle>{t(project.titleKey)}</CardTitle>
+                  {project.titleKey === "Invoko" && (
+                    <span className="bg-yellow-500/10 text-yellow-500 text-xs font-medium px-2.5 py-1 rounded-full border border-yellow-500/20 animate-pulse">
+                      Em Construção
+                    </span>
+                  )}
+                </div>
                 <CardDescription>{t(project.descriptionKey)}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
