@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
                   <CardTitle>{t(project.titleKey)}</CardTitle>
                   {project.titleKey === "Invoko" && (
                     <span className="bg-yellow-500/10 text-yellow-500 text-xs font-medium px-2.5 py-1 rounded-full border border-yellow-500/20 animate-pulse">
-                      Em Construção
+                      {t("Em construção")}
                     </span>
                   )}
                 </div>
