@@ -16,23 +16,23 @@ interface Project {
 
 const Projects: React.FC = () => {
   const { t } = useLanguage();
-  
+
   const projects: Project[] = [
     {
-      titleKey: "E-commerce Responsivo",
-      descriptionKey: "Uma plataforma de comércio eletrônico completa com carrinho de compras, checkout e integração de pagamentos.",
-      image: "/placeholder.svg",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      repoUrl: "#",
+      titleKey: "Dashboard Financeiro",
+      descriptionKey: "Um dashboard financeiro completo com visualização de dados, gráficos e tabelas para gerenciamento de finanças.",
+      image: "/financial_dash.png",
+      tags: ["React", "Next.js", "Chart.js", "Styled Components"],
+      liveUrl: "https://financial-dashboard-two-sigma.vercel.app/",
+      repoUrl: "https://github.com/NullBeta001/financial-dashboard",
     },
     {
-      titleKey: "Dashboard Admin",
-      descriptionKey: "Painel administrativo com visualização de dados, gráficos e tabelas para gerenciamento de conteúdo.",
-      image: "/placeholder.svg",
-      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Chart.js"],
-      liveUrl: "#",
-      repoUrl: "#",
+      titleKey: "Game Mania",
+      descriptionKey: "Um app SPA que simula um e-commerce de acessórios e periféricos para gamers.",
+      image: "/game_mania.png",
+      tags: ["Angular", "TypeScript", "Karma", "Babel"],
+      liveUrl: "https://game-mania-lilac.vercel.app/",
+      repoUrl: "https://github.com/NullBeta001/game-mania-angular",
     },
     {
       titleKey: "App de Notícias",
@@ -48,14 +48,14 @@ const Projects: React.FC = () => {
     <section id="projects" className="section">
       <div className="container mx-auto">
         <h2 className="section-title">{t("Meus Projetos")}</h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {projects.map((project, index) => (
             <Card key={index} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="aspect-video w-full overflow-hidden rounded-t-lg">
-                <img 
-                  src={project.image} 
-                  alt={t(project.titleKey)} 
+                <img
+                  src={project.image}
+                  alt={t(project.titleKey)}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -66,8 +66,8 @@ const Projects: React.FC = () => {
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
-                    <span 
-                      key={tagIndex} 
+                    <span
+                      key={tagIndex}
                       className="bg-secondary text-xs font-medium px-2.5 py-1 rounded"
                     >
                       {tag}
@@ -76,16 +76,18 @@ const Projects: React.FC = () => {
                 </div>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <a 
-                  href={project.repoUrl} 
+                <a
+                  href={project.repoUrl}
+                  target="_blank"
                   className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
                   rel="noopener noreferrer"
                   aria-label={`Ver código do projeto ${t(project.titleKey)}`}
                 >
                   <Github size={18} className="mr-1" /> {t("Código")}
                 </a>
-                <a 
+                <a
                   href={project.liveUrl}
+                  target="_blank"
                   className="flex items-center text-muted-foreground hover:text-foreground transition-colors"
                   rel="noopener noreferrer"
                   aria-label={`Ver demonstração do projeto ${t(project.titleKey)}`}
@@ -96,7 +98,7 @@ const Projects: React.FC = () => {
             </Card>
           ))}
         </div>
-        
+
         <div className="mt-12 text-center">
           <Button variant="outline" size="lg" className="group">
             {t("Ver mais projetos")}

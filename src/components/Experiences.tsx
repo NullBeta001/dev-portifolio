@@ -33,13 +33,13 @@ const Experiences: React.FC<ExperiencesProps> = ({
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex items-start gap-2">
-                <div className="w-16 h-16 relative overflow-hidden bg-background/50 rounded-lg flex-shrink-0">
+                <div className="relative overflow-hidden bg-background/50 rounded-lg flex-shrink-0">
                   <img
                     src={exp.logo}
                     alt={exp.company}
-                    className="object-contain rounded-lg p-2"
-                    width={58}
-                    height={58}
+                    className="object-contain rounded-lg"
+                    width={48}
+                    height={48}
                   />
                 </div>
                 <div className="flex-1 min-w-0">

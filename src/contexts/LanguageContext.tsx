@@ -206,21 +206,21 @@ const translations = {
     pt: "Meus Projetos",
     en: "My Projects"
   },
-  "E-commerce Responsivo": {
-    pt: "E-commerce Responsivo",
-    en: "Responsive E-commerce"
+  "Dashboard Financeiro": {
+    pt: "Dashboard Financeiro",
+    en: "Financial Dashboard"
   },
-  "Uma plataforma de comércio eletrônico completa com carrinho de compras, checkout e integração de pagamentos.": {
-    pt: "Uma plataforma de comércio eletrônico completa com carrinho de compras, checkout e integração de pagamentos.",
-    en: "A complete e-commerce platform with shopping cart, checkout, and payment integration."
+  "Um dashboard financeiro completo com visualização de dados, gráficos e tabelas para gerenciamento de finanças.": {
+    pt: "Um dashboard financeiro completo com visualização de dados, gráficos e tabelas para gerenciamento de finanças.",
+    en: "A complete financial dashboard with data visualization, charts, and tables for financial management."
   },
-  "Dashboard Admin": {
-    pt: "Dashboard Admin",
-    en: "Admin Dashboard"
+  "Game Mania": {
+    pt: "Game Mania",
+    en: "Game Mania"
   },
-  "Painel administrativo com visualização de dados, gráficos e tabelas para gerenciamento de conteúdo.": {
-    pt: "Painel administrativo com visualização de dados, gráficos e tabelas para gerenciamento de conteúdo.",
-    en: "Administrative panel with data visualization, charts, and tables for content management."
+  "Um app SPA que simula um e-commerce de acessórios e periféricos para gamers.": {
+    pt: "Um app SPA que simula um e-commerce de acessórios e periféricos para gamers.",
+    en: "A SPA app that simulates an e-commerce of accessories and peripherals for gamers."
   },
   "App de Notícias": {
     pt: "App de Notícias",
