@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Github, Globe, ArrowRight } from "lucide-react";
@@ -51,7 +50,7 @@ const Projects: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {projects.map((project, index) => (
-            <Card key={index} className="card-hover animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+            <Card key={index} className="card-hover animate-fade-in flex flex-col h-full" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="aspect-video w-full overflow-hidden rounded-t-lg">
                 <img
                   src={project.image}
@@ -63,7 +62,7 @@ const Projects: React.FC = () => {
                 <CardTitle>{t(project.titleKey)}</CardTitle>
                 <CardDescription>{t(project.descriptionKey)}</CardDescription>
               </CardHeader>
-              <CardContent>
+              <CardContent className="flex-grow">
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
                     <span
@@ -75,7 +74,7 @@ const Projects: React.FC = () => {
                   ))}
                 </div>
               </CardContent>
-              <CardFooter className="flex justify-between">
+              <CardFooter className="flex justify-between mt-auto">
                 <a
                   href={project.repoUrl}
                   target="_blank"
